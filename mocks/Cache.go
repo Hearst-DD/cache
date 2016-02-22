@@ -1,6 +1,6 @@
 package mocks
 
-import "github.com/Hearst-DD/htv-server/cache"
+import "github.com/Hearst-DD/cache"
 import "github.com/stretchr/testify/mock"
 
 import "time"
