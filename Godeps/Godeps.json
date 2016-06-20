@@ -1,7 +1,7 @@
 {
 	"ImportPath": "github.com/Hearst-DD/cache",
 	"GoVersion": "go1.6",
-	"GodepVersion": "v70",
+	"GodepVersion": "v72",
 	"Deps": [
 		{
 			"ImportPath": "github.com/davecgh/go-spew/spew",
