@@ -27,6 +27,10 @@ type Cache interface {
 
 	// Size returns the max items that may be stored in the cache
 	Size() int
+
+	// Len returns the total number of items stored in the underlying cache. NOTE: this
+	// method DOES NOT take into account TTL, so the result may include stale items.
+	Len() int
 }
 
 // New constructs a new LRU/TTL cache with the given max size (num objects)
@@ -72,4 +76,8 @@ func (c *cache) Get(key string) (_ interface{}, _ Result) {
 
 func (c *cache) Size() int {
 	return c.maxSize
+}
+
+func (c *cache) Len() int {
+	return c.lruCache.Len()
 }
