@@ -1,12 +1,15 @@
 ### Jira URL
-*The link to the related ticket in Jira.*
+https://thetower.atlassian.net/browse/[project]‌-[ticket#] e.g. HP‌-123, HTVDO‌-456, HVL‌-789
+URL of the corresponding Jira ticket. Should match smart commit.
 
 ### Description
-*What problem is this branch meant to solve, what changes does it make, and how do these changes fix that problem?*
+Describe what this PR generally covers.
 
-### Dependencies in Other Repo
-*If this pull request relates to or depends on any changes in another repo link it here.*
-*Also, make sure to add the "Requires Unmerged Dependencies in Another Repo" label, if applicable.*
+### Testing Instructions
+Highlight anything specific you want looked at - when applicable.
 
-### QA Instructions
-*How QA should test this and check for any possible regressions. Provide test data when applicable.*
+### Dependent Changes in Other Repos
+If this PR is part of a change involving multiple repos, or depends on another PR being merged, note it here.
+
+### Runbook changes
+If this change involves a change to the service [runbook](https://thetower.atlassian.net/wiki/spaces/HTVENG/pages/457572416/DevOps%2BRunbook), note it here.
