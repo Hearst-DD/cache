@@ -27,6 +27,9 @@ type Cache interface {
 
 	// Size returns the max items that may be stored in the cache
 	Size() int
+
+	// Remove removes the provided key from the cache.
+	Remove(key string)
 }
 
 // New constructs a new LRU/TTL cache with the given max size (num objects)
@@ -72,4 +75,9 @@ func (c *cache) Get(key string) (_ interface{}, _ Result) {
 
 func (c *cache) Size() int {
 	return c.maxSize
+}
+
+// Remove the provided key from the cache.
+func (c *cache) Remove(key string) {
+	c.lruCache.Remove(key)
 }
